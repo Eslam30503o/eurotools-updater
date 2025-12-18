@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Logo](assets/logo.png)
+![Logo](logo.png)
 
 **نظام إدارة أكواد الأدوات الصناعية المتقدم**
 
