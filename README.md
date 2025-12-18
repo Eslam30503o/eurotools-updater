@@ -22,7 +22,6 @@
 ### 📋 نظرة عامة
 
 Euro Tools Code Manager هو تطبيق متقدم لإدارة وتنظيم أكواد الأدوات الصناعية. يوفر النظام واجهة مستخدم حديثة وسهلة الاستخدام مع إمكانيات مزامنة سحابية متقدمة عبر Google Sheets.
-[![Download](https://img.shields.io/badge/تحميل_الإصدار-4.5.0-success?style=for-the-badge)](https://github.com/Eslam30503o/eurotools-updater/releases/download/4.5.0/Euro.Tools.Code.Generators.exe)
 <p align="center">
   <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.5.0/Euro.Tools.Code.Generators.exe">
     <img src="https://img.shields.io/badge/⬇_Download%20Version-4.5.0-0A66C2?style=for-the-badge&logo=github&logoColor=white" />
@@ -306,6 +305,17 @@ python -m unittest tests.test_data_manager -v
 
 Euro Tools Code Manager is an advanced application for managing and organizing industrial tool codes. The system provides a modern, user-friendly interface with advanced cloud synchronization capabilities via Google Sheets.
 
+<p align="center">
+  <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.5.0/Euro.Tools.Code.Generators.exe">
+    <img src="https://img.shields.io/badge/⬇_Download%20Version-4.5.0-0A66C2?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>Windows 64-bit • Offline Installer</sub>
+</p>
+
+
 ### ✨ Key Features
 
 #### 🎯 Tool Management
@@ -436,6 +446,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for the industrial community**
 
-[⬆ Back to top](#-eurotools-updater)
+[⬆ Back to top](#eurotools-updater)
 
 </div>
