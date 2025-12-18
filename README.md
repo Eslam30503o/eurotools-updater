@@ -281,7 +281,7 @@ python -m unittest tests.test_data_manager -v
 #### طرق التواصل
 - **GitHub Issues**: للأخطاء والاقتراحات
 - **Email**: Eslam.Gamal1066@gmail.com
-- **Documentation**: [Wiki](https://github.com/Eslam30503o/eurotools-updater/blob/main/docs/index.md)
+- **Documentation**: [Documentation](https://github.com/Eslam30503o/eurotools-updater/blob/main/docs/index.md)
 
 #### الأخطاء الشائعة
 - **مشكلة المزامنة**: تحقق من اتصال الإنترنت وصلاحيات Google Sheets
@@ -437,6 +437,17 @@ We welcome contributions! Please:
 3. Write tests for new code
 4. Ensure all tests pass
 5. Submit a Pull Request
+
+
+
+### 📞 Support
+
+#### For Communication
+- **GitHub Issues**: للأخطاء والاقتراحات
+- **Email**: Eslam.Gamal1066@gmail.com
+- **Documentation**: [Documentation](https://github.com/Eslam30503o/eurotools-updater/blob/main/docs/index.md)
+
+
 
 ### 📄 License
 
