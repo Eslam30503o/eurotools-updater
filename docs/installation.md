@@ -213,9 +213,8 @@ rmdir /s eurotools-env  # Windows
 
 1. **راجع الأسئلة الشائعة**: [FAQ](help/faq.md)
 2. **استكشاف الأخطاء**: [Troubleshooting](help/troubleshooting.md)
-3. **أنشئ Issue**: [GitHub Issues](https://github.com/your-username/euro-tools-code-manager/issues)
-4. **راسلنا**: support@eurotools.com
-
+3. **أنشئ Issue**: [GitHub Issues](https://github.com/Eslam30503o/eurotools-updater/issues)
+4. **راسلنا**:Eslam.Gamal1066@gmail.com
 ## 📋 قائمة التحقق
 
 - [ ] Python 3.9+ مثبت
@@ -230,3 +229,4 @@ rmdir /s eurotools-env  # Windows
 
 
 **التالي**: [الإعداد الأولي](setup.md)
+
