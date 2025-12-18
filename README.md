@@ -281,7 +281,7 @@ python -m unittest tests.test_data_manager -v
 #### طرق التواصل
 - **GitHub Issues**: للأخطاء والاقتراحات
 - **Email**: Eslam.Gamal1066@gmail.com
-- **Documentation**: [Wiki](https://github.com/Eslam30503o/eurotools-updater/docs)
+- **Documentation**: [Wiki](https://github.com/Eslam30503o/eurotools-updater/docs/setup.md)
 - **site**: [Wiki](https://github.com/Eslam30503o/eurotools-updater/site)
 
 #### الأخطاء الشائعة
