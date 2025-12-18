@@ -22,6 +22,8 @@
 ### 📋 نظرة عامة
 
 Euro Tools Code Manager هو تطبيق متقدم لإدارة وتنظيم أكواد الأدوات الصناعية. يوفر النظام واجهة مستخدم حديثة وسهلة الاستخدام مع إمكانيات مزامنة سحابية متقدمة عبر Google Sheets.
+[![Download](https://img.shields.io/badge/تحميل_الإصدار-4.5.0-success?style=for-the-badge)](https://github.com/Eslam30503o/eurotools-updater/releases/download/4.5.0/Euro.Tools.Code.Generators.exe)
+
 
 ### ✨ الميزات الرئيسية
 
@@ -280,7 +282,6 @@ python -m unittest tests.test_data_manager -v
 هذا المشروع مرخص تحت رخصة MIT - راجع ملف [LICENSE](LICENSE) للتفاصيل.
 
 ### 🙏 شكر وتقدير
-[![Download](https://img.shields.io/badge/تحميل_الإصدار-4.5.0-success?style=for-the-badge)](https://github.com/Eslam30503o/eurotools-updater/releases/tag/v4.5.0)
 
 - **CustomTkinter** - واجهة المستخدم الحديثة
 - **Google Sheets API** - المزامنة السحابية
