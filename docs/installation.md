@@ -27,7 +27,7 @@ python3 --version
 
 #### 1. استنساخ المشروع
 ```bash
-git clone https://github.com/your-username/euro-tools-code-manager.git
+git clone https://github.com/Eslam30503o/eurotools-updater.git
 cd euro-tools-code-manager
 ```
 
@@ -227,5 +227,6 @@ rmdir /s eurotools-env  # Windows
 - [ ] البيانات تحفظ وتحمل بنجاح
 
 ---
+
 
 **التالي**: [الإعداد الأولي](setup.md)
