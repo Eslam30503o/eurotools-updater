@@ -129,7 +129,7 @@ Pillow >= 9.0.0
 
 1. **استنساخ المشروع**
 ```bash
-git clone https://github.com/your-username/euro-tools-code-manager.git
+git clone https://github.com/Eslam30503o/eurotools-updater.git
 cd euro-tools-code-manager
 ```
 
@@ -267,7 +267,7 @@ python -m unittest tests.test_data_manager -v
 
 #### طرق التواصل
 - **GitHub Issues**: للأخطاء والاقتراحات
-- **Email**: support@eurotools.com
+- **Email**: Eslam.Gamal1066@gmail.com
 - **Documentation**: [Wiki](https://github.com/your-username/euro-tools-code-manager/wiki)
 
 #### الأخطاء الشائعة
