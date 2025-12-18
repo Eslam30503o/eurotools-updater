@@ -1,3 +1,4 @@
+<a name="top"></a>
 # 🛠️ Euro Tools Code Manager
 
 <div align="center">
@@ -447,6 +448,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for the industrial community**
 
-[⬆ Back to top](#--euro-tools-code-manager)
+[⬆ Back to top](#top)
 
 </div>
