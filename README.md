@@ -268,7 +268,7 @@ python -m unittest tests.test_data_manager -v
 #### طرق التواصل
 - **GitHub Issues**: للأخطاء والاقتراحات
 - **Email**: Eslam.Gamal1066@gmail.com
-- **Documentation**: [Wiki](https://github.com/your-username/euro-tools-code-manager/wiki)
+- **Documentation**: [Wiki](https://github.com/Eslam30503o/eurotools-updater/wiki)
 
 #### الأخطاء الشائعة
 - **مشكلة المزامنة**: تحقق من اتصال الإنترنت وصلاحيات Google Sheets
@@ -280,6 +280,7 @@ python -m unittest tests.test_data_manager -v
 هذا المشروع مرخص تحت رخصة MIT - راجع ملف [LICENSE](LICENSE) للتفاصيل.
 
 ### 🙏 شكر وتقدير
+[![Download](https://img.shields.io/badge/تحميل_الإصدار-4.5.0-success?style=for-the-badge)](https://github.com/Eslam30503o/eurotools-updater/releases/tag/v4.5.0)
 
 - **CustomTkinter** - واجهة المستخدم الحديثة
 - **Google Sheets API** - المزامنة السحابية
