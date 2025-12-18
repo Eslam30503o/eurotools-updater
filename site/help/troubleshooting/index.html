@@ -1,0 +1,3627 @@
+
+<!doctype html>
+<html lang="ar" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="نظام إدارة أكواد الأدوات الصناعية المتقدم - التوثيق الشامل">
+      
+      
+        <meta name="author" content="Euro Tools Team">
+      
+      
+        <link rel="canonical" href="https://your-username.github.io/euro-tools-code-manager/help/troubleshooting/">
+      
+      
+        <link rel="prev" href="../faq/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>استكشاف الأخطاء - Euro Tools Code Manager Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/rtl.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="rtl" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          انتقل إلى المحتوى
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="عنوان العارضة">
+    <a href="../.." title="Euro Tools Code Manager Documentation" class="md-header__button md-logo" aria-label="Euro Tools Code Manager Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Euro Tools Code Manager Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              استكشاف الأخطاء
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="التبديل للوضع المظلم"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="التبديل للوضع المظلم" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="التبديل للوضع الفاتح"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="التبديل للوضع الفاتح" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="بحث" placeholder="بحث" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="إبحث">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="شارك" aria-label="شارك" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="مسح كلي" aria-label="مسح كلي" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            بدء البحث
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="نوافذ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  الرئيسية
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../installation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🚀 البدء السريع
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../user-guide/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  📖 دليل المستخدم
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developer-guide/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🔧 دليل المطور
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../testing/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🧪 الاختبارات
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../security/index.md" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🔐 الأمان
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../deployment/index.md" class="md-tabs__link">
+          
+  
+  
+    
+  
+  🚀 النشر والإنتاج
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../faq/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ❓ المساعدة والدعم
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../api/index.md" class="md-tabs__link">
+          
+  
+  
+    
+  
+  📋 مراجع
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="تصفح" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Euro Tools Code Manager Documentation" class="md-nav__button md-logo" aria-label="Euro Tools Code Manager Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Euro Tools Code Manager Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    الرئيسية
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚀 البدء السريع
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🚀 البدء السريع
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    التثبيت
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    الإعداد الأولي
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    أول استخدام
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../user-guide/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📖 دليل المستخدم
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📖 دليل المستخدم
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/interface-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    واجهة المستخدم
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/tools-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    إدارة الأدوات
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/lists-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    إدارة القوائم
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/cloud-sync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    المزامنة السحابية
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/export-print.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    التصدير والطباعة
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/user-management.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    إدارة المستخدمين
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/advanced-features.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    الميزات المتقدمة
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../developer-guide/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔧 دليل المطور
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔧 دليل المطور
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    بنية المشروع
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/design-patterns.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    أنماط التصميم
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/api-reference.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    مرجع API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/adding-features.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    إضافة ميزات
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/coding-standards.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    معايير الكود
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer-guide/development-setup.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    إعداد التطوير
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../testing/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🧪 الاختبارات
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🧪 الاختبارات
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/writing-tests.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    كتابة الاختبارات
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/running-tests.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    تشغيل الاختبارات
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/performance-testing.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    اختبارات الأداء
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/security-testing.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    اختبارات الأمان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testing/coverage-analysis.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    قياس التغطية
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔐 الأمان
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🔐 الأمان
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security/index.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    دليل الأمان
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security/best-practices.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    أفضل الممارسات
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security/user-management.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    إدارة المستخدمين
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../security/data-protection.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    حماية البيانات
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚀 النشر والإنتاج
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🚀 النشر والإنتاج
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/index.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    دليل النشر
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/server-setup.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    إعداد الخادم
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/cicd.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/monitoring.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    المراقبة
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/maintenance.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    الصيانة
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ❓ المساعدة والدعم
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ❓ المساعدة والدعم
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    الأسئلة الشائعة
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    استكشاف الأخطاء
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    استكشاف الأخطاء
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="جدول المحتويات">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      جدول المحتويات
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 نظرة عامة
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚨 المشاكل الشائعة وحلولها
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚨 المشاكل الشائعة وحلولها">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. مشاكل بدء التشغيل
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. مشاكل بدء التشغيل">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المشكلة: التطبيق لا يبدأ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="المشكلة: التطبيق لا يبدأ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 1: التحقق من متطلبات النظام
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 2: إعادة تثبيت المتطلبات
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 3: فحص ملفات البيانات
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المشكلة: رسالة "Module not found"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. مشاكل واجهة المستخدم
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. مشاكل واجهة المستخدم">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المشكلة: الواجهة تظهر بشكل غريب أو مشوه
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="المشكلة: الواجهة تظهر بشكل غريب أو مشوه">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 1: إعادة تعيين إعدادات الواجهة
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 2: تحديث إعدادات العرض
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 3: التحقق من إعدادات النظام
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المشكلة: التطبيق بطيء أو يتجمد
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="المشكلة: التطبيق بطيء أو يتجمد">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 1: تحسين الأداء
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 2: تنظيف البيانات
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. مشاكل البيانات
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. مشاكل البيانات">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المشكلة: فقدان البيانات أو تلفها
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="المشكلة: فقدان البيانات أو تلفها">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 1: استعادة من النسخة الاحتياطية
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 2: إصلاح ملفات البيانات
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المشكلة: أكواد الأدوات مكررة
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. مشاكل المزامنة السحابية
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. مشاكل المزامنة السحابية">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-sheets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المشكلة: فشل المزامنة مع Google Sheets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="المشكلة: فشل المزامنة مع Google Sheets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 1: التحقق من الاتصال
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 2: تجديد مفاتيح الوصول
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 3: فحص الصلاحيات
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المشكلة: تعارضات في البيانات
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. مشاكل الأداء
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. مشاكل الأداء">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        المشكلة: التطبيق يستهلك ذاكرة كثيرة
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="المشكلة: التطبيق يستهلك ذاكرة كثيرة">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 1: تحسين استخدام الذاكرة
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        الحل 2: تحسين تحميل البيانات
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ أدوات التشخيص المتقدمة
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ أدوات التشخيص المتقدمة">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        أداة فحص النظام الشاملة
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📞 الحصول على المساعدة
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📞 الحصول على المساعدة">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        متى تطلب المساعدة
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        قنوات الدعم
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="قنوات الدعم">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. الدعم الذاتي
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. الدعم المجتمعي
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. الدعم المباشر
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        معلومات مطلوبة عند طلب المساعدة
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-help.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    الحصول على المساعدة
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reporting-issues.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    الإبلاغ عن مشاكل
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📋 مراجع
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📋 مراجع
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/index.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    سجل التغييرات
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    المساهمة
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    الترخيص
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="تصفح" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    الرئيسية
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../faq/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    ❓ المساعدة والدعم
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">🔧 استكشاف الأخطاء وإصلاحها<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>دليل شامل لحل المشاكل الشائعة في Euro Tools Code Manager.</p>
+<h2 id="_2">🎯 نظرة عامة<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>هذا الدليل يساعدك في تشخيص وحل المشاكل التي قد تواجهها أثناء استخدام التطبيق.</p>
+<h2 id="_3">🚨 المشاكل الشائعة وحلولها<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. مشاكل بدء التشغيل<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<h4 id="_4">المشكلة: التطبيق لا يبدأ<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>🔍 الأعراض:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>• لا يظهر شيء عند النقر على التطبيق
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>• رسالة خطأ عند محاولة التشغيل
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>• التطبيق يتوقف فوراً بعد البدء
+</code></pre></div>
+<p><strong>الحلول المقترحة:</strong></p>
+<h5 id="1_1">الحل 1: التحقق من متطلبات النظام<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># التحقق من إصدار Python</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>python<span class="w"> </span>--version
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># يجب أن يكون 3.8 أو أحدث</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># التحقق من المكتبات المطلوبة</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>pip<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>customtkinter
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>pip<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>pandas
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>pip<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>gspread
+</code></pre></div>
+<h5 id="2">الحل 2: إعادة تثبيت المتطلبات<a class="headerlink" href="#2" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># إعادة تثبيت جميع المتطلبات</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>pip<span class="w"> </span>uninstall<span class="w"> </span>-r<span class="w"> </span>requirements.txt<span class="w"> </span>-y
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># أو تثبيت كل مكتبة منفردة</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>pip<span class="w"> </span>install<span class="w"> </span>customtkinter<span class="w"> </span>pandas<span class="w"> </span>gspread<span class="w"> </span>google-auth
+</code></pre></div>
+<h5 id="3">الحل 3: فحص ملفات البيانات<a class="headerlink" href="#3" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># التحقق من وجود ملفات البيانات الأساسية</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>ls<span class="w"> </span>-la<span class="w"> </span>*.json
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># إنشاء ملفات البيانات إذا كانت مفقودة</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;{&quot;tools&quot;: [], &quot;metadata&quot;: {&quot;version&quot;: &quot;4.5.0&quot;}}&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>tools.json
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;{&quot;lists&quot;: []}&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>lists.json
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;{&quot;users&quot;: []}&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>users.json
+</code></pre></div>
+<h4 id="module-not-found">المشكلة: رسالة "Module not found"<a class="headerlink" href="#module-not-found" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>🔍 الخطأ:
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>ModuleNotFoundError: No module named &#39;customtkinter&#39;
+</code></pre></div>
+<p><strong>الحل:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># تثبيت المكتبة المفقودة</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>pip<span class="w"> </span>install<span class="w"> </span>customtkinter
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># أو تثبيت جميع المتطلبات</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># في حالة استخدام بيئة افتراضية</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w">  </span><span class="c1"># Linux/Mac</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate<span class="w">     </span><span class="c1"># Windows</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div></p>
+<h3 id="2_1">2. مشاكل واجهة المستخدم<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<h4 id="_5">المشكلة: الواجهة تظهر بشكل غريب أو مشوه<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>🔍 الأعراض:
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>• النصوص متداخلة أو غير واضحة
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>• الأزرار في أماكن خاطئة
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>• الألوان غير صحيحة
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>• حجم النوافذ غير مناسب
+</code></pre></div>
+<p><strong>الحلول:</strong></p>
+<h5 id="1_2">الحل 1: إعادة تعيين إعدادات الواجهة<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># حذف ملف الإعدادات لإعادة تعيين الواجهة</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;ui_settings.json&#39;</span><span class="p">):</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;ui_settings.json&#39;</span><span class="p">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="c1"># إعادة تشغيل التطبيق</span>
+</code></pre></div>
+<h5 id="2_2">الحل 2: تحديث إعدادات العرض<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>⚙️ في إعدادات التطبيق:
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>1. اذهب إلى الإعدادات &gt; المظهر
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>2. اختر &quot;إعادة تعيين للافتراضي&quot;
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>3. أعد تشغيل التطبيق
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>4. اختر دقة الشاشة المناسبة
+</code></pre></div>
+<h5 id="3_1">الحل 3: التحقق من إعدادات النظام<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>🖥️ إعدادات Windows:
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>1. كليك يمين على سطح المكتب
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>2. اختر &quot;Display settings&quot;
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>3. تأكد من أن Scale هو 100% أو 125%
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>4. أعد تشغيل التطبيق
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>🖥️ إعدادات macOS:
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>1. System Preferences &gt; Displays
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>2. اختر &quot;Default for display&quot;
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>3. أعد تشغيل التطبيق
+</code></pre></div>
+<h4 id="_6">المشكلة: التطبيق بطيء أو يتجمد<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>🔍 الأعراض:
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>• استجابة بطيئة للنقرات
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>• تجمد عند فتح النوافذ
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>• بطء في تحميل البيانات
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>• استهلاك عالي للذاكرة
+</code></pre></div>
+<p><strong>الحلول:</strong></p>
+<h5 id="1_3">الحل 1: تحسين الأداء<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># في إعدادات التطبيق</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">performance_settings</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="s2">&quot;enable_cache&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    <span class="s2">&quot;max_cache_size&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="s2">&quot;lazy_loading&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    <span class="s2">&quot;reduce_animations&quot;</span><span class="p">:</span> <span class="kc">True</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="p">}</span>
+</code></pre></div>
+<h5 id="2_3">الحل 2: تنظيف البيانات<a class="headerlink" href="#2_3" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>🧹 خطوات التنظيف:
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>1. اذهب إلى الإعدادات &gt; الصيانة
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>2. انقر على &quot;تنظيف الملفات المؤقتة&quot;
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>3. انقر على &quot;ضغط قاعدة البيانات&quot;
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>4. انقر على &quot;إعادة بناء الفهارس&quot;
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>5. أعد تشغيل التطبيق
+</code></pre></div>
+<h3 id="3_2">3. مشاكل البيانات<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h3>
+<h4 id="_7">المشكلة: فقدان البيانات أو تلفها<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>🔍 الأعراض:
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>• الأدوات المحفوظة لا تظهر
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>• رسالة &quot;ملف البيانات تالف&quot;
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>• البيانات تختفي بعد إعادة التشغيل
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>• أخطاء في تحميل القوائم
+</code></pre></div>
+<p><strong>الحلول:</strong></p>
+<h5 id="1_4">الحل 1: استعادة من النسخة الاحتياطية<a class="headerlink" href="#1_4" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>💾 استعادة النسخة الاحتياطية:
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>1. اذهب إلى مجلد &quot;backups&quot;
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>2. ابحث عن أحدث نسخة احتياطية
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>3. انسخ الملفات إلى المجلد الرئيسي
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>4. أعد تشغيل التطبيق
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a># أو استخدم الأداة المدمجة
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>python backup_restore.py --restore backups/latest_backup.zip
+</code></pre></div>
+<h5 id="2_4">الحل 2: إصلاح ملفات البيانات<a class="headerlink" href="#2_4" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># أداة إصلاح البيانات</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">repair_data_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;إصلاح ملف البيانات التالف&quot;&quot;&quot;</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>    <span class="c1"># إنشاء نسخة احتياطية</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>    <span class="n">backup_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">file_path</span><span class="si">}</span><span class="s2">.backup_</span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y%m</span><span class="si">%d</span><span class="s1">_%H%M%S&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>    <span class="n">shutil</span><span class="o">.</span><span class="n">copy2</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">backup_path</span><span class="p">)</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>        <span class="c1"># محاولة تحميل الملف</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>            <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ الملف </span><span class="si">{</span><span class="n">file_path</span><span class="si">}</span><span class="s2"> سليم&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>        <span class="k">return</span> <span class="kc">True</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>    <span class="k">except</span> <span class="n">json</span><span class="o">.</span><span class="n">JSONDecodeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ خطأ في الملف </span><span class="si">{</span><span class="n">file_path</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>        <span class="c1"># محاولة الإصلاح</span>
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a>            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>                <span class="n">content</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a>
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>            <span class="c1"># إصلاحات شائعة</span>
+<a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a>            <span class="n">content</span> <span class="o">=</span> <span class="n">content</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;}</span><span class="se">\n</span><span class="s1">{&#39;</span><span class="p">,</span> <span class="s1">&#39;},</span><span class="se">\n</span><span class="s1">{&#39;</span><span class="p">)</span>  <span class="c1"># إضافة فواصل مفقودة</span>
+<a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a>            <span class="n">content</span> <span class="o">=</span> <span class="n">content</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a>
+<a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">content</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;{&#39;</span><span class="p">):</span>
+<a id="__codelineno-15-33" name="__codelineno-15-33" href="#__codelineno-15-33"></a>                <span class="n">content</span> <span class="o">=</span> <span class="s1">&#39;{&#39;</span> <span class="o">+</span> <span class="n">content</span>
+<a id="__codelineno-15-34" name="__codelineno-15-34" href="#__codelineno-15-34"></a>            <span class="k">if</span> <span class="ow">not</span> <span class="n">content</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;}&#39;</span><span class="p">):</span>
+<a id="__codelineno-15-35" name="__codelineno-15-35" href="#__codelineno-15-35"></a>                <span class="n">content</span> <span class="o">=</span> <span class="n">content</span> <span class="o">+</span> <span class="s1">&#39;}&#39;</span>
+<a id="__codelineno-15-36" name="__codelineno-15-36" href="#__codelineno-15-36"></a>
+<a id="__codelineno-15-37" name="__codelineno-15-37" href="#__codelineno-15-37"></a>            <span class="c1"># محاولة تحميل المحتوى المُصلح</span>
+<a id="__codelineno-15-38" name="__codelineno-15-38" href="#__codelineno-15-38"></a>            <span class="n">repaired_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+<a id="__codelineno-15-39" name="__codelineno-15-39" href="#__codelineno-15-39"></a>
+<a id="__codelineno-15-40" name="__codelineno-15-40" href="#__codelineno-15-40"></a>            <span class="c1"># حفظ الملف المُصلح</span>
+<a id="__codelineno-15-41" name="__codelineno-15-41" href="#__codelineno-15-41"></a>            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-15-42" name="__codelineno-15-42" href="#__codelineno-15-42"></a>                <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">repaired_data</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-15-43" name="__codelineno-15-43" href="#__codelineno-15-43"></a>
+<a id="__codelineno-15-44" name="__codelineno-15-44" href="#__codelineno-15-44"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ تم إصلاح الملف </span><span class="si">{</span><span class="n">file_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-45" name="__codelineno-15-45" href="#__codelineno-15-45"></a>            <span class="k">return</span> <span class="kc">True</span>
+<a id="__codelineno-15-46" name="__codelineno-15-46" href="#__codelineno-15-46"></a>
+<a id="__codelineno-15-47" name="__codelineno-15-47" href="#__codelineno-15-47"></a>        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">repair_error</span><span class="p">:</span>
+<a id="__codelineno-15-48" name="__codelineno-15-48" href="#__codelineno-15-48"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ فشل في إصلاح الملف: </span><span class="si">{</span><span class="n">repair_error</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-49" name="__codelineno-15-49" href="#__codelineno-15-49"></a>
+<a id="__codelineno-15-50" name="__codelineno-15-50" href="#__codelineno-15-50"></a>            <span class="c1"># إنشاء ملف جديد فارغ</span>
+<a id="__codelineno-15-51" name="__codelineno-15-51" href="#__codelineno-15-51"></a>            <span class="n">default_data</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-15-52" name="__codelineno-15-52" href="#__codelineno-15-52"></a>                <span class="s2">&quot;tools&quot;</span><span class="p">:</span> <span class="p">[]</span> <span class="k">if</span> <span class="s2">&quot;tools&quot;</span> <span class="ow">in</span> <span class="n">file_path</span> <span class="k">else</span> <span class="p">[],</span>
+<a id="__codelineno-15-53" name="__codelineno-15-53" href="#__codelineno-15-53"></a>                <span class="s2">&quot;lists&quot;</span><span class="p">:</span> <span class="p">[]</span> <span class="k">if</span> <span class="s2">&quot;lists&quot;</span> <span class="ow">in</span> <span class="n">file_path</span> <span class="k">else</span> <span class="p">[],</span>
+<a id="__codelineno-15-54" name="__codelineno-15-54" href="#__codelineno-15-54"></a>                <span class="s2">&quot;users&quot;</span><span class="p">:</span> <span class="p">[]</span> <span class="k">if</span> <span class="s2">&quot;users&quot;</span> <span class="ow">in</span> <span class="n">file_path</span> <span class="k">else</span> <span class="p">[],</span>
+<a id="__codelineno-15-55" name="__codelineno-15-55" href="#__codelineno-15-55"></a>                <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;4.5.0&quot;</span><span class="p">,</span> <span class="s2">&quot;created&quot;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">()}</span>
+<a id="__codelineno-15-56" name="__codelineno-15-56" href="#__codelineno-15-56"></a>            <span class="p">}</span>
+<a id="__codelineno-15-57" name="__codelineno-15-57" href="#__codelineno-15-57"></a>
+<a id="__codelineno-15-58" name="__codelineno-15-58" href="#__codelineno-15-58"></a>            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-15-59" name="__codelineno-15-59" href="#__codelineno-15-59"></a>                <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">default_data</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-15-60" name="__codelineno-15-60" href="#__codelineno-15-60"></a>
+<a id="__codelineno-15-61" name="__codelineno-15-61" href="#__codelineno-15-61"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;⚠️ تم إنشاء ملف جديد: </span><span class="si">{</span><span class="n">file_path</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-62" name="__codelineno-15-62" href="#__codelineno-15-62"></a>            <span class="k">return</span> <span class="kc">False</span>
+<a id="__codelineno-15-63" name="__codelineno-15-63" href="#__codelineno-15-63"></a>
+<a id="__codelineno-15-64" name="__codelineno-15-64" href="#__codelineno-15-64"></a><span class="c1"># تشغيل الإصلاح</span>
+<a id="__codelineno-15-65" name="__codelineno-15-65" href="#__codelineno-15-65"></a><span class="n">repair_data_file</span><span class="p">(</span><span class="s1">&#39;tools.json&#39;</span><span class="p">)</span>
+<a id="__codelineno-15-66" name="__codelineno-15-66" href="#__codelineno-15-66"></a><span class="n">repair_data_file</span><span class="p">(</span><span class="s1">&#39;lists.json&#39;</span><span class="p">)</span>
+<a id="__codelineno-15-67" name="__codelineno-15-67" href="#__codelineno-15-67"></a><span class="n">repair_data_file</span><span class="p">(</span><span class="s1">&#39;users.json&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="_8">المشكلة: أكواد الأدوات مكررة<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>🔍 المشكلة:
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>• ظهور أدوات بنفس الكود
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>• رسائل تحذير من التكرار
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>• مشاكل في البحث والفلترة
+</code></pre></div>
+<p><strong>الحل:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># أداة إصلاح الأكواد المكررة</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">fix_duplicate_codes</span><span class="p">():</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;إصلاح الأكواد المكررة&quot;&quot;&quot;</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;tools.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>        <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>    <span class="n">tools</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tools&#39;</span><span class="p">,</span> <span class="p">[])</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>    <span class="n">seen_codes</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>    <span class="n">fixed_tools</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>    <span class="n">duplicates_found</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>    <span class="k">for</span> <span class="n">tool</span> <span class="ow">in</span> <span class="n">tools</span><span class="p">:</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>        <span class="n">original_code</span> <span class="o">=</span> <span class="n">tool</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>        <span class="k">if</span> <span class="n">original_code</span> <span class="ow">in</span> <span class="n">seen_codes</span><span class="p">:</span>
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>            <span class="c1"># توليد كود جديد</span>
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a>            <span class="n">base_code</span> <span class="o">=</span> <span class="n">original_code</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="s1">&#39;-&#39;</span> <span class="ow">in</span> <span class="n">original_code</span> <span class="k">else</span> <span class="s1">&#39;TOOL&#39;</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a>            <span class="n">counter</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a>
+<a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a>            <span class="k">while</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">base_code</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">counter</span><span class="si">:</span><span class="s2">04d</span><span class="si">}</span><span class="s2">&quot;</span> <span class="ow">in</span> <span class="n">seen_codes</span><span class="p">:</span>
+<a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a>                <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a>
+<a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a>            <span class="n">new_code</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">base_code</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">counter</span><span class="si">:</span><span class="s2">04d</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-17-25" name="__codelineno-17-25" href="#__codelineno-17-25"></a>            <span class="n">tool</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_code</span>
+<a id="__codelineno-17-26" name="__codelineno-17-26" href="#__codelineno-17-26"></a>            <span class="n">duplicates_found</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-17-27" name="__codelineno-17-27" href="#__codelineno-17-27"></a>
+<a id="__codelineno-17-28" name="__codelineno-17-28" href="#__codelineno-17-28"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;🔄 تم تغيير الكود من </span><span class="si">{</span><span class="n">original_code</span><span class="si">}</span><span class="s2"> إلى </span><span class="si">{</span><span class="n">new_code</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-17-29" name="__codelineno-17-29" href="#__codelineno-17-29"></a>
+<a id="__codelineno-17-30" name="__codelineno-17-30" href="#__codelineno-17-30"></a>        <span class="n">seen_codes</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">tool</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">])</span>
+<a id="__codelineno-17-31" name="__codelineno-17-31" href="#__codelineno-17-31"></a>        <span class="n">fixed_tools</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tool</span><span class="p">)</span>
+<a id="__codelineno-17-32" name="__codelineno-17-32" href="#__codelineno-17-32"></a>
+<a id="__codelineno-17-33" name="__codelineno-17-33" href="#__codelineno-17-33"></a>    <span class="c1"># حفظ البيانات المُصلحة</span>
+<a id="__codelineno-17-34" name="__codelineno-17-34" href="#__codelineno-17-34"></a>    <span class="n">data</span><span class="p">[</span><span class="s1">&#39;tools&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fixed_tools</span>
+<a id="__codelineno-17-35" name="__codelineno-17-35" href="#__codelineno-17-35"></a>
+<a id="__codelineno-17-36" name="__codelineno-17-36" href="#__codelineno-17-36"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;tools.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-17-37" name="__codelineno-17-37" href="#__codelineno-17-37"></a>        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-17-38" name="__codelineno-17-38" href="#__codelineno-17-38"></a>
+<a id="__codelineno-17-39" name="__codelineno-17-39" href="#__codelineno-17-39"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ تم إصلاح </span><span class="si">{</span><span class="n">duplicates_found</span><span class="si">}</span><span class="s2"> كود مكرر&quot;</span><span class="p">)</span>
+<a id="__codelineno-17-40" name="__codelineno-17-40" href="#__codelineno-17-40"></a>
+<a id="__codelineno-17-41" name="__codelineno-17-41" href="#__codelineno-17-41"></a><span class="c1"># تشغيل الإصلاح</span>
+<a id="__codelineno-17-42" name="__codelineno-17-42" href="#__codelineno-17-42"></a><span class="n">fix_duplicate_codes</span><span class="p">()</span>
+</code></pre></div></p>
+<h3 id="4">4. مشاكل المزامنة السحابية<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<h4 id="google-sheets">المشكلة: فشل المزامنة مع Google Sheets<a class="headerlink" href="#google-sheets" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>🔍 الأعراض:
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>• رسالة &quot;فشل في الاتصال&quot;
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>• &quot;انتهت صلاحية المفاتيح&quot;
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>• &quot;ليس لديك صلاحية للوصول&quot;
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>• المزامنة تتوقف في المنتصف
+</code></pre></div>
+<p><strong>الحلول:</strong></p>
+<h5 id="1_5">الحل 1: التحقق من الاتصال<a class="headerlink" href="#1_5" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># اختبار الاتصال بالإنترنت</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>ping<span class="w"> </span>google.com
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="c1"># اختبار الوصول لـ Google Sheets API</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>curl<span class="w"> </span>-I<span class="w"> </span>https://sheets.googleapis.com/v4/spreadsheets
+</code></pre></div>
+<h5 id="2_5">الحل 2: تجديد مفاتيح الوصول<a class="headerlink" href="#2_5" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>🔑 تجديد المفاتيح:
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>1. اذهب إلى Google Cloud Console
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>2. اختر مشروعك
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>3. اذهب إلى &quot;APIs &amp; Services&quot; &gt; &quot;Credentials&quot;
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>4. احذف Service Account القديم
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>5. أنشئ Service Account جديد
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>6. حمل ملف JSON الجديد
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>7. استبدل الملف القديم في التطبيق
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>8. أعد تشغيل التطبيق
+</code></pre></div>
+<h5 id="3_3">الحل 3: فحص الصلاحيات<a class="headerlink" href="#3_3" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># اختبار صلاحيات Google Sheets</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">gspread</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">google.oauth2.service_account</span><span class="w"> </span><span class="kn">import</span> <span class="n">Credentials</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">test_google_sheets_access</span><span class="p">():</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;اختبار الوصول لـ Google Sheets&quot;&quot;&quot;</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>        <span class="c1"># تحميل المفاتيح</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>        <span class="n">creds</span> <span class="o">=</span> <span class="n">Credentials</span><span class="o">.</span><span class="n">from_service_account_file</span><span class="p">(</span><span class="s1">&#39;service_account.json&#39;</span><span class="p">)</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>        <span class="n">client</span> <span class="o">=</span> <span class="n">gspread</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="n">creds</span><span class="p">)</span>
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>        <span class="c1"># اختبار الوصول</span>
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>        <span class="n">sheets</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">openall</span><span class="p">()</span>
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ تم العثور على </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">sheets</span><span class="p">)</span><span class="si">}</span><span class="s2"> جدول بيانات&quot;</span><span class="p">)</span>
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>        <span class="c1"># اختبار القراءة والكتابة</span>
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>        <span class="k">if</span> <span class="n">sheets</span><span class="p">:</span>
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a>            <span class="n">sheet</span> <span class="o">=</span> <span class="n">sheets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a>            <span class="n">worksheet</span> <span class="o">=</span> <span class="n">sheet</span><span class="o">.</span><span class="n">sheet1</span>
+<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a>
+<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a>            <span class="c1"># اختبار القراءة</span>
+<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a>            <span class="n">data</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">get_all_records</span><span class="p">()</span>
+<a id="__codelineno-21-24" name="__codelineno-21-24" href="#__codelineno-21-24"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ تم قراءة </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="si">}</span><span class="s2"> صف&quot;</span><span class="p">)</span>
+<a id="__codelineno-21-25" name="__codelineno-21-25" href="#__codelineno-21-25"></a>
+<a id="__codelineno-21-26" name="__codelineno-21-26" href="#__codelineno-21-26"></a>            <span class="c1"># اختبار الكتابة</span>
+<a id="__codelineno-21-27" name="__codelineno-21-27" href="#__codelineno-21-27"></a>            <span class="n">test_cell</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-21-28" name="__codelineno-21-28" href="#__codelineno-21-28"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ تم قراءة الخلية: </span><span class="si">{</span><span class="n">test_cell</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-21-29" name="__codelineno-21-29" href="#__codelineno-21-29"></a>
+<a id="__codelineno-21-30" name="__codelineno-21-30" href="#__codelineno-21-30"></a>        <span class="k">return</span> <span class="kc">True</span>
+<a id="__codelineno-21-31" name="__codelineno-21-31" href="#__codelineno-21-31"></a>
+<a id="__codelineno-21-32" name="__codelineno-21-32" href="#__codelineno-21-32"></a>    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-21-33" name="__codelineno-21-33" href="#__codelineno-21-33"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ خطأ في الوصول: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-21-34" name="__codelineno-21-34" href="#__codelineno-21-34"></a>        <span class="k">return</span> <span class="kc">False</span>
+<a id="__codelineno-21-35" name="__codelineno-21-35" href="#__codelineno-21-35"></a>
+<a id="__codelineno-21-36" name="__codelineno-21-36" href="#__codelineno-21-36"></a><span class="c1"># تشغيل الاختبار</span>
+<a id="__codelineno-21-37" name="__codelineno-21-37" href="#__codelineno-21-37"></a><span class="n">test_google_sheets_access</span><span class="p">()</span>
+</code></pre></div>
+<h4 id="_9">المشكلة: تعارضات في البيانات<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>🔍 المشكلة:
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>• رسائل تحذير من التعارضات
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>• بيانات مختلفة في التطبيق والسحابة
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>• فقدان بعض التحديثات
+</code></pre></div>
+<p><strong>الحل:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># حل التعارضات يدوياً</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">resolve_sync_conflicts</span><span class="p">():</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;حل تعارضات المزامنة&quot;&quot;&quot;</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔍 فحص التعارضات...&quot;</span><span class="p">)</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>    <span class="c1"># تحميل البيانات المحلية</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;tools.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>        <span class="n">local_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>    <span class="c1"># تحميل البيانات السحابية</span>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>    <span class="c1"># (هذا مثال مبسط)</span>
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>    <span class="n">cloud_data</span> <span class="o">=</span> <span class="n">fetch_cloud_data</span><span class="p">()</span>
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>    <span class="n">conflicts</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a>
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a>    <span class="c1"># مقارنة البيانات</span>
+<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a>    <span class="k">for</span> <span class="n">local_tool</span> <span class="ow">in</span> <span class="n">local_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tools&#39;</span><span class="p">,</span> <span class="p">[]):</span>
+<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a>        <span class="n">tool_id</span> <span class="o">=</span> <span class="n">local_tool</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a>        <span class="n">cloud_tool</span> <span class="o">=</span> <span class="n">find_tool_in_cloud</span><span class="p">(</span><span class="n">cloud_data</span><span class="p">,</span> <span class="n">tool_id</span><span class="p">)</span>
+<a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a>
+<a id="__codelineno-23-22" name="__codelineno-23-22" href="#__codelineno-23-22"></a>        <span class="k">if</span> <span class="n">cloud_tool</span><span class="p">:</span>
+<a id="__codelineno-23-23" name="__codelineno-23-23" href="#__codelineno-23-23"></a>            <span class="k">if</span> <span class="n">local_tool</span><span class="p">[</span><span class="s1">&#39;updated_at&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="n">cloud_tool</span><span class="p">[</span><span class="s1">&#39;updated_at&#39;</span><span class="p">]:</span>
+<a id="__codelineno-23-24" name="__codelineno-23-24" href="#__codelineno-23-24"></a>                <span class="n">conflicts</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+<a id="__codelineno-23-25" name="__codelineno-23-25" href="#__codelineno-23-25"></a>                    <span class="s1">&#39;tool_id&#39;</span><span class="p">:</span> <span class="n">tool_id</span><span class="p">,</span>
+<a id="__codelineno-23-26" name="__codelineno-23-26" href="#__codelineno-23-26"></a>                    <span class="s1">&#39;local&#39;</span><span class="p">:</span> <span class="n">local_tool</span><span class="p">,</span>
+<a id="__codelineno-23-27" name="__codelineno-23-27" href="#__codelineno-23-27"></a>                    <span class="s1">&#39;cloud&#39;</span><span class="p">:</span> <span class="n">cloud_tool</span>
+<a id="__codelineno-23-28" name="__codelineno-23-28" href="#__codelineno-23-28"></a>                <span class="p">})</span>
+<a id="__codelineno-23-29" name="__codelineno-23-29" href="#__codelineno-23-29"></a>
+<a id="__codelineno-23-30" name="__codelineno-23-30" href="#__codelineno-23-30"></a>    <span class="c1"># عرض التعارضات للمستخدم</span>
+<a id="__codelineno-23-31" name="__codelineno-23-31" href="#__codelineno-23-31"></a>    <span class="k">if</span> <span class="n">conflicts</span><span class="p">:</span>
+<a id="__codelineno-23-32" name="__codelineno-23-32" href="#__codelineno-23-32"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;⚠️ تم العثور على </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">conflicts</span><span class="p">)</span><span class="si">}</span><span class="s2"> تعارض&quot;</span><span class="p">)</span>
+<a id="__codelineno-23-33" name="__codelineno-23-33" href="#__codelineno-23-33"></a>        <span class="k">for</span> <span class="n">conflict</span> <span class="ow">in</span> <span class="n">conflicts</span><span class="p">:</span>
+<a id="__codelineno-23-34" name="__codelineno-23-34" href="#__codelineno-23-34"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;تعارض في الأداة: </span><span class="si">{</span><span class="n">conflict</span><span class="p">[</span><span class="s1">&#39;tool_id&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-23-35" name="__codelineno-23-35" href="#__codelineno-23-35"></a>            <span class="c1"># هنا يمكن عرض واجهة للمستخدم لاختيار الحل</span>
+<a id="__codelineno-23-36" name="__codelineno-23-36" href="#__codelineno-23-36"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-23-37" name="__codelineno-23-37" href="#__codelineno-23-37"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ لا توجد تعارضات&quot;</span><span class="p">)</span>
+<a id="__codelineno-23-38" name="__codelineno-23-38" href="#__codelineno-23-38"></a>
+<a id="__codelineno-23-39" name="__codelineno-23-39" href="#__codelineno-23-39"></a><span class="c1"># تشغيل حل التعارضات</span>
+<a id="__codelineno-23-40" name="__codelineno-23-40" href="#__codelineno-23-40"></a><span class="n">resolve_sync_conflicts</span><span class="p">()</span>
+</code></pre></div></p>
+<h3 id="5">5. مشاكل الأداء<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<h4 id="_10">المشكلة: التطبيق يستهلك ذاكرة كثيرة<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>🔍 الأعراض:
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>• بطء في النظام عموماً
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>• رسائل تحذير من نقص الذاكرة
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>• التطبيق يتوقف فجأة
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>• استجابة بطيئة جداً
+</code></pre></div>
+<p><strong>الحلول:</strong></p>
+<h5 id="1_6">الحل 1: تحسين استخدام الذاكرة<a class="headerlink" href="#1_6" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># مراقبة استخدام الذاكرة</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">psutil</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">gc</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">monitor_memory_usage</span><span class="p">():</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;مراقبة استخدام الذاكرة&quot;&quot;&quot;</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>    <span class="n">process</span> <span class="o">=</span> <span class="n">psutil</span><span class="o">.</span><span class="n">Process</span><span class="p">()</span>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>    <span class="n">memory_info</span> <span class="o">=</span> <span class="n">process</span><span class="o">.</span><span class="n">memory_info</span><span class="p">()</span>
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;استخدام الذاكرة: </span><span class="si">{</span><span class="n">memory_info</span><span class="o">.</span><span class="n">rss</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> MB&quot;</span><span class="p">)</span>
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;الذاكرة الافتراضية: </span><span class="si">{</span><span class="n">memory_info</span><span class="o">.</span><span class="n">vms</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> MB&quot;</span><span class="p">)</span>
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>
+<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>    <span class="c1"># تنظيف الذاكرة</span>
+<a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>    <span class="n">gc</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
+<a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a>
+<a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a>    <span class="n">memory_info_after</span> <span class="o">=</span> <span class="n">process</span><span class="o">.</span><span class="n">memory_info</span><span class="p">()</span>
+<a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;بعد التنظيف: </span><span class="si">{</span><span class="n">memory_info_after</span><span class="o">.</span><span class="n">rss</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> MB&quot;</span><span class="p">)</span>
+<a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a>
+<a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a><span class="c1"># تشغيل المراقبة</span>
+<a id="__codelineno-25-21" name="__codelineno-25-21" href="#__codelineno-25-21"></a><span class="n">monitor_memory_usage</span><span class="p">()</span>
+</code></pre></div>
+<h5 id="2_6">الحل 2: تحسين تحميل البيانات<a class="headerlink" href="#2_6" title="Permanent link">&para;</a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># تحميل البيانات بشكل تدريجي</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">OptimizedDataLoader</span><span class="p">:</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;محمل البيانات المحسن&quot;&quot;&quot;</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">cache</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">max_cache_size</span> <span class="o">=</span> <span class="mi">1000</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">load_tools_paginated</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">page_size</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;تحميل الأدوات بشكل مقسم&quot;&quot;&quot;</span>
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a>        <span class="n">cache_key</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;tools_page_</span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">page_size</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a>
+<a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a>        <span class="k">if</span> <span class="n">cache_key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="p">:</span>
+<a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a>            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="p">[</span><span class="n">cache_key</span><span class="p">]</span>
+<a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a>
+<a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a>        <span class="c1"># تحميل البيانات</span>
+<a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;tools.json&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-26-19" name="__codelineno-26-19" href="#__codelineno-26-19"></a>            <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<a id="__codelineno-26-20" name="__codelineno-26-20" href="#__codelineno-26-20"></a>
+<a id="__codelineno-26-21" name="__codelineno-26-21" href="#__codelineno-26-21"></a>        <span class="n">tools</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tools&#39;</span><span class="p">,</span> <span class="p">[])</span>
+<a id="__codelineno-26-22" name="__codelineno-26-22" href="#__codelineno-26-22"></a>        <span class="n">start_idx</span> <span class="o">=</span> <span class="p">(</span><span class="n">page</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">page_size</span>
+<a id="__codelineno-26-23" name="__codelineno-26-23" href="#__codelineno-26-23"></a>        <span class="n">end_idx</span> <span class="o">=</span> <span class="n">start_idx</span> <span class="o">+</span> <span class="n">page_size</span>
+<a id="__codelineno-26-24" name="__codelineno-26-24" href="#__codelineno-26-24"></a>
+<a id="__codelineno-26-25" name="__codelineno-26-25" href="#__codelineno-26-25"></a>        <span class="n">page_tools</span> <span class="o">=</span> <span class="n">tools</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:</span><span class="n">end_idx</span><span class="p">]</span>
+<a id="__codelineno-26-26" name="__codelineno-26-26" href="#__codelineno-26-26"></a>
+<a id="__codelineno-26-27" name="__codelineno-26-27" href="#__codelineno-26-27"></a>        <span class="c1"># إضافة للذاكرة المؤقتة</span>
+<a id="__codelineno-26-28" name="__codelineno-26-28" href="#__codelineno-26-28"></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="p">)</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_cache_size</span><span class="p">:</span>
+<a id="__codelineno-26-29" name="__codelineno-26-29" href="#__codelineno-26-29"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="p">[</span><span class="n">cache_key</span><span class="p">]</span> <span class="o">=</span> <span class="n">page_tools</span>
+<a id="__codelineno-26-30" name="__codelineno-26-30" href="#__codelineno-26-30"></a>
+<a id="__codelineno-26-31" name="__codelineno-26-31" href="#__codelineno-26-31"></a>        <span class="k">return</span> <span class="n">page_tools</span>
+<a id="__codelineno-26-32" name="__codelineno-26-32" href="#__codelineno-26-32"></a>
+<a id="__codelineno-26-33" name="__codelineno-26-33" href="#__codelineno-26-33"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">clear_cache</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-26-34" name="__codelineno-26-34" href="#__codelineno-26-34"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;مسح الذاكرة المؤقتة&quot;&quot;&quot;</span>
+<a id="__codelineno-26-35" name="__codelineno-26-35" href="#__codelineno-26-35"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<a id="__codelineno-26-36" name="__codelineno-26-36" href="#__codelineno-26-36"></a>        <span class="n">gc</span><span class="o">.</span><span class="n">collect</span><span class="p">()</span>
+<a id="__codelineno-26-37" name="__codelineno-26-37" href="#__codelineno-26-37"></a>
+<a id="__codelineno-26-38" name="__codelineno-26-38" href="#__codelineno-26-38"></a><span class="c1"># استخدام المحمل المحسن</span>
+<a id="__codelineno-26-39" name="__codelineno-26-39" href="#__codelineno-26-39"></a><span class="n">loader</span> <span class="o">=</span> <span class="n">OptimizedDataLoader</span><span class="p">()</span>
+<a id="__codelineno-26-40" name="__codelineno-26-40" href="#__codelineno-26-40"></a><span class="n">tools_page_1</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">load_tools_paginated</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="_11">🛠️ أدوات التشخيص المتقدمة<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h3 id="_12">أداة فحص النظام الشاملة<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="ch">#!/usr/bin/env python3</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="sd">أداة التشخيص الشاملة لـ Euro Tools Code Manager</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="kn">import</span><span class="w"> </span><span class="nn">psutil</span>
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="kn">import</span><span class="w"> </span><span class="nn">platform</span>
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>
+<a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a><span class="k">class</span><span class="w"> </span><span class="nc">SystemDiagnostics</span><span class="p">:</span>
+<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;أداة التشخيص الشاملة&quot;&quot;&quot;</span>
+<a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a>
+<a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">report</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-27-19" name="__codelineno-27-19" href="#__codelineno-27-19"></a>            <span class="s1">&#39;timestamp&#39;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(),</span>
+<a id="__codelineno-27-20" name="__codelineno-27-20" href="#__codelineno-27-20"></a>            <span class="s1">&#39;system_info&#39;</span><span class="p">:</span> <span class="p">{},</span>
+<a id="__codelineno-27-21" name="__codelineno-27-21" href="#__codelineno-27-21"></a>            <span class="s1">&#39;python_info&#39;</span><span class="p">:</span> <span class="p">{},</span>
+<a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a>            <span class="s1">&#39;dependencies&#39;</span><span class="p">:</span> <span class="p">{},</span>
+<a id="__codelineno-27-23" name="__codelineno-27-23" href="#__codelineno-27-23"></a>            <span class="s1">&#39;files_status&#39;</span><span class="p">:</span> <span class="p">{},</span>
+<a id="__codelineno-27-24" name="__codelineno-27-24" href="#__codelineno-27-24"></a>            <span class="s1">&#39;performance&#39;</span><span class="p">:</span> <span class="p">{},</span>
+<a id="__codelineno-27-25" name="__codelineno-27-25" href="#__codelineno-27-25"></a>            <span class="s1">&#39;errors&#39;</span><span class="p">:</span> <span class="p">[]</span>
+<a id="__codelineno-27-26" name="__codelineno-27-26" href="#__codelineno-27-26"></a>        <span class="p">}</span>
+<a id="__codelineno-27-27" name="__codelineno-27-27" href="#__codelineno-27-27"></a>
+<a id="__codelineno-27-28" name="__codelineno-27-28" href="#__codelineno-27-28"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">run_full_diagnostics</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-27-29" name="__codelineno-27-29" href="#__codelineno-27-29"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;تشغيل التشخيص الشامل&quot;&quot;&quot;</span>
+<a id="__codelineno-27-30" name="__codelineno-27-30" href="#__codelineno-27-30"></a>
+<a id="__codelineno-27-31" name="__codelineno-27-31" href="#__codelineno-27-31"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔍 بدء التشخيص الشامل...&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-32" name="__codelineno-27-32" href="#__codelineno-27-32"></a>
+<a id="__codelineno-27-33" name="__codelineno-27-33" href="#__codelineno-27-33"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">check_system_info</span><span class="p">()</span>
+<a id="__codelineno-27-34" name="__codelineno-27-34" href="#__codelineno-27-34"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">check_python_environment</span><span class="p">()</span>
+<a id="__codelineno-27-35" name="__codelineno-27-35" href="#__codelineno-27-35"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">check_dependencies</span><span class="p">()</span>
+<a id="__codelineno-27-36" name="__codelineno-27-36" href="#__codelineno-27-36"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">check_data_files</span><span class="p">()</span>
+<a id="__codelineno-27-37" name="__codelineno-27-37" href="#__codelineno-27-37"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">check_performance</span><span class="p">()</span>
+<a id="__codelineno-27-38" name="__codelineno-27-38" href="#__codelineno-27-38"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">check_permissions</span><span class="p">()</span>
+<a id="__codelineno-27-39" name="__codelineno-27-39" href="#__codelineno-27-39"></a>
+<a id="__codelineno-27-40" name="__codelineno-27-40" href="#__codelineno-27-40"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">generate_report</span><span class="p">()</span>
+<a id="__codelineno-27-41" name="__codelineno-27-41" href="#__codelineno-27-41"></a>
+<a id="__codelineno-27-42" name="__codelineno-27-42" href="#__codelineno-27-42"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ انتهى التشخيص&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-43" name="__codelineno-27-43" href="#__codelineno-27-43"></a>
+<a id="__codelineno-27-44" name="__codelineno-27-44" href="#__codelineno-27-44"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">check_system_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-27-45" name="__codelineno-27-45" href="#__codelineno-27-45"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;فحص معلومات النظام&quot;&quot;&quot;</span>
+<a id="__codelineno-27-46" name="__codelineno-27-46" href="#__codelineno-27-46"></a>
+<a id="__codelineno-27-47" name="__codelineno-27-47" href="#__codelineno-27-47"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;📊 فحص معلومات النظام...&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-48" name="__codelineno-27-48" href="#__codelineno-27-48"></a>
+<a id="__codelineno-27-49" name="__codelineno-27-49" href="#__codelineno-27-49"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;system_info&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-27-50" name="__codelineno-27-50" href="#__codelineno-27-50"></a>            <span class="s1">&#39;platform&#39;</span><span class="p">:</span> <span class="n">platform</span><span class="o">.</span><span class="n">platform</span><span class="p">(),</span>
+<a id="__codelineno-27-51" name="__codelineno-27-51" href="#__codelineno-27-51"></a>            <span class="s1">&#39;system&#39;</span><span class="p">:</span> <span class="n">platform</span><span class="o">.</span><span class="n">system</span><span class="p">(),</span>
+<a id="__codelineno-27-52" name="__codelineno-27-52" href="#__codelineno-27-52"></a>            <span class="s1">&#39;release&#39;</span><span class="p">:</span> <span class="n">platform</span><span class="o">.</span><span class="n">release</span><span class="p">(),</span>
+<a id="__codelineno-27-53" name="__codelineno-27-53" href="#__codelineno-27-53"></a>            <span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="n">platform</span><span class="o">.</span><span class="n">version</span><span class="p">(),</span>
+<a id="__codelineno-27-54" name="__codelineno-27-54" href="#__codelineno-27-54"></a>            <span class="s1">&#39;machine&#39;</span><span class="p">:</span> <span class="n">platform</span><span class="o">.</span><span class="n">machine</span><span class="p">(),</span>
+<a id="__codelineno-27-55" name="__codelineno-27-55" href="#__codelineno-27-55"></a>            <span class="s1">&#39;processor&#39;</span><span class="p">:</span> <span class="n">platform</span><span class="o">.</span><span class="n">processor</span><span class="p">(),</span>
+<a id="__codelineno-27-56" name="__codelineno-27-56" href="#__codelineno-27-56"></a>            <span class="s1">&#39;cpu_count&#39;</span><span class="p">:</span> <span class="n">psutil</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">(),</span>
+<a id="__codelineno-27-57" name="__codelineno-27-57" href="#__codelineno-27-57"></a>            <span class="s1">&#39;memory_total&#39;</span><span class="p">:</span> <span class="n">psutil</span><span class="o">.</span><span class="n">virtual_memory</span><span class="p">()</span><span class="o">.</span><span class="n">total</span><span class="p">,</span>
+<a id="__codelineno-27-58" name="__codelineno-27-58" href="#__codelineno-27-58"></a>            <span class="s1">&#39;memory_available&#39;</span><span class="p">:</span> <span class="n">psutil</span><span class="o">.</span><span class="n">virtual_memory</span><span class="p">()</span><span class="o">.</span><span class="n">available</span><span class="p">,</span>
+<a id="__codelineno-27-59" name="__codelineno-27-59" href="#__codelineno-27-59"></a>            <span class="s1">&#39;disk_usage&#39;</span><span class="p">:</span> <span class="n">psutil</span><span class="o">.</span><span class="n">disk_usage</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">percent</span>
+<a id="__codelineno-27-60" name="__codelineno-27-60" href="#__codelineno-27-60"></a>        <span class="p">}</span>
+<a id="__codelineno-27-61" name="__codelineno-27-61" href="#__codelineno-27-61"></a>
+<a id="__codelineno-27-62" name="__codelineno-27-62" href="#__codelineno-27-62"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">check_python_environment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-27-63" name="__codelineno-27-63" href="#__codelineno-27-63"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;فحص بيئة Python&quot;&quot;&quot;</span>
+<a id="__codelineno-27-64" name="__codelineno-27-64" href="#__codelineno-27-64"></a>
+<a id="__codelineno-27-65" name="__codelineno-27-65" href="#__codelineno-27-65"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🐍 فحص بيئة Python...&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-66" name="__codelineno-27-66" href="#__codelineno-27-66"></a>
+<a id="__codelineno-27-67" name="__codelineno-27-67" href="#__codelineno-27-67"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;python_info&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-27-68" name="__codelineno-27-68" href="#__codelineno-27-68"></a>            <span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">,</span>
+<a id="__codelineno-27-69" name="__codelineno-27-69" href="#__codelineno-27-69"></a>            <span class="s1">&#39;executable&#39;</span><span class="p">:</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">,</span>
+<a id="__codelineno-27-70" name="__codelineno-27-70" href="#__codelineno-27-70"></a>            <span class="s1">&#39;path&#39;</span><span class="p">:</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[:</span><span class="mi">5</span><span class="p">],</span>  <span class="c1"># أول 5 مسارات فقط</span>
+<a id="__codelineno-27-71" name="__codelineno-27-71" href="#__codelineno-27-71"></a>            <span class="s1">&#39;encoding&#39;</span><span class="p">:</span> <span class="n">sys</span><span class="o">.</span><span class="n">getdefaultencoding</span><span class="p">()</span>
+<a id="__codelineno-27-72" name="__codelineno-27-72" href="#__codelineno-27-72"></a>        <span class="p">}</span>
+<a id="__codelineno-27-73" name="__codelineno-27-73" href="#__codelineno-27-73"></a>
+<a id="__codelineno-27-74" name="__codelineno-27-74" href="#__codelineno-27-74"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">check_dependencies</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-27-75" name="__codelineno-27-75" href="#__codelineno-27-75"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;فحص المكتبات المطلوبة&quot;&quot;&quot;</span>
+<a id="__codelineno-27-76" name="__codelineno-27-76" href="#__codelineno-27-76"></a>
+<a id="__codelineno-27-77" name="__codelineno-27-77" href="#__codelineno-27-77"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;📦 فحص المكتبات...&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-78" name="__codelineno-27-78" href="#__codelineno-27-78"></a>
+<a id="__codelineno-27-79" name="__codelineno-27-79" href="#__codelineno-27-79"></a>        <span class="n">required_packages</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-27-80" name="__codelineno-27-80" href="#__codelineno-27-80"></a>            <span class="s1">&#39;customtkinter&#39;</span><span class="p">,</span> <span class="s1">&#39;pandas&#39;</span><span class="p">,</span> <span class="s1">&#39;gspread&#39;</span><span class="p">,</span> 
+<a id="__codelineno-27-81" name="__codelineno-27-81" href="#__codelineno-27-81"></a>            <span class="s1">&#39;google-auth&#39;</span><span class="p">,</span> <span class="s1">&#39;Pillow&#39;</span><span class="p">,</span> <span class="s1">&#39;requests&#39;</span>
+<a id="__codelineno-27-82" name="__codelineno-27-82" href="#__codelineno-27-82"></a>        <span class="p">]</span>
+<a id="__codelineno-27-83" name="__codelineno-27-83" href="#__codelineno-27-83"></a>
+<a id="__codelineno-27-84" name="__codelineno-27-84" href="#__codelineno-27-84"></a>        <span class="k">for</span> <span class="n">package</span> <span class="ow">in</span> <span class="n">required_packages</span><span class="p">:</span>
+<a id="__codelineno-27-85" name="__codelineno-27-85" href="#__codelineno-27-85"></a>            <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-27-86" name="__codelineno-27-86" href="#__codelineno-27-86"></a>                <span class="nb">__import__</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+<a id="__codelineno-27-87" name="__codelineno-27-87" href="#__codelineno-27-87"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;dependencies&#39;</span><span class="p">][</span><span class="n">package</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;مثبت&#39;</span>
+<a id="__codelineno-27-88" name="__codelineno-27-88" href="#__codelineno-27-88"></a>            <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+<a id="__codelineno-27-89" name="__codelineno-27-89" href="#__codelineno-27-89"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;dependencies&#39;</span><span class="p">][</span><span class="n">package</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;مفقود&#39;</span>
+<a id="__codelineno-27-90" name="__codelineno-27-90" href="#__codelineno-27-90"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;errors&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;المكتبة مفقودة: </span><span class="si">{</span><span class="n">package</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-91" name="__codelineno-27-91" href="#__codelineno-27-91"></a>
+<a id="__codelineno-27-92" name="__codelineno-27-92" href="#__codelineno-27-92"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">check_data_files</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-27-93" name="__codelineno-27-93" href="#__codelineno-27-93"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;فحص ملفات البيانات&quot;&quot;&quot;</span>
+<a id="__codelineno-27-94" name="__codelineno-27-94" href="#__codelineno-27-94"></a>
+<a id="__codelineno-27-95" name="__codelineno-27-95" href="#__codelineno-27-95"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;📁 فحص ملفات البيانات...&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-96" name="__codelineno-27-96" href="#__codelineno-27-96"></a>
+<a id="__codelineno-27-97" name="__codelineno-27-97" href="#__codelineno-27-97"></a>        <span class="n">data_files</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;tools.json&#39;</span><span class="p">,</span> <span class="s1">&#39;lists.json&#39;</span><span class="p">,</span> <span class="s1">&#39;users.json&#39;</span><span class="p">,</span> <span class="s1">&#39;config.json&#39;</span><span class="p">]</span>
+<a id="__codelineno-27-98" name="__codelineno-27-98" href="#__codelineno-27-98"></a>
+<a id="__codelineno-27-99" name="__codelineno-27-99" href="#__codelineno-27-99"></a>        <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">data_files</span><span class="p">:</span>
+<a id="__codelineno-27-100" name="__codelineno-27-100" href="#__codelineno-27-100"></a>            <span class="n">file_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
+<a id="__codelineno-27-101" name="__codelineno-27-101" href="#__codelineno-27-101"></a>
+<a id="__codelineno-27-102" name="__codelineno-27-102" href="#__codelineno-27-102"></a>            <span class="k">if</span> <span class="n">file_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+<a id="__codelineno-27-103" name="__codelineno-27-103" href="#__codelineno-27-103"></a>                <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-27-104" name="__codelineno-27-104" href="#__codelineno-27-104"></a>                    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-27-105" name="__codelineno-27-105" href="#__codelineno-27-105"></a>                        <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<a id="__codelineno-27-106" name="__codelineno-27-106" href="#__codelineno-27-106"></a>
+<a id="__codelineno-27-107" name="__codelineno-27-107" href="#__codelineno-27-107"></a>                    <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;files_status&#39;</span><span class="p">][</span><span class="n">file_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-27-108" name="__codelineno-27-108" href="#__codelineno-27-108"></a>                        <span class="s1">&#39;exists&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-27-109" name="__codelineno-27-109" href="#__codelineno-27-109"></a>                        <span class="s1">&#39;valid_json&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-27-110" name="__codelineno-27-110" href="#__codelineno-27-110"></a>                        <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="n">file_path</span><span class="o">.</span><span class="n">stat</span><span class="p">()</span><span class="o">.</span><span class="n">st_size</span><span class="p">,</span>
+<a id="__codelineno-27-111" name="__codelineno-27-111" href="#__codelineno-27-111"></a>                        <span class="s1">&#39;modified&#39;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">fromtimestamp</span><span class="p">(</span>
+<a id="__codelineno-27-112" name="__codelineno-27-112" href="#__codelineno-27-112"></a>                            <span class="n">file_path</span><span class="o">.</span><span class="n">stat</span><span class="p">()</span><span class="o">.</span><span class="n">st_mtime</span>
+<a id="__codelineno-27-113" name="__codelineno-27-113" href="#__codelineno-27-113"></a>                        <span class="p">)</span><span class="o">.</span><span class="n">isoformat</span><span class="p">()</span>
+<a id="__codelineno-27-114" name="__codelineno-27-114" href="#__codelineno-27-114"></a>                    <span class="p">}</span>
+<a id="__codelineno-27-115" name="__codelineno-27-115" href="#__codelineno-27-115"></a>
+<a id="__codelineno-27-116" name="__codelineno-27-116" href="#__codelineno-27-116"></a>                <span class="k">except</span> <span class="n">json</span><span class="o">.</span><span class="n">JSONDecodeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-27-117" name="__codelineno-27-117" href="#__codelineno-27-117"></a>                    <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;files_status&#39;</span><span class="p">][</span><span class="n">file_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-27-118" name="__codelineno-27-118" href="#__codelineno-27-118"></a>                        <span class="s1">&#39;exists&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-27-119" name="__codelineno-27-119" href="#__codelineno-27-119"></a>                        <span class="s1">&#39;valid_json&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+<a id="__codelineno-27-120" name="__codelineno-27-120" href="#__codelineno-27-120"></a>                        <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<a id="__codelineno-27-121" name="__codelineno-27-121" href="#__codelineno-27-121"></a>                    <span class="p">}</span>
+<a id="__codelineno-27-122" name="__codelineno-27-122" href="#__codelineno-27-122"></a>                    <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;errors&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ملف JSON تالف: </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-123" name="__codelineno-27-123" href="#__codelineno-27-123"></a>
+<a id="__codelineno-27-124" name="__codelineno-27-124" href="#__codelineno-27-124"></a>            <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-27-125" name="__codelineno-27-125" href="#__codelineno-27-125"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;files_status&#39;</span><span class="p">][</span><span class="n">file_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-27-126" name="__codelineno-27-126" href="#__codelineno-27-126"></a>                    <span class="s1">&#39;exists&#39;</span><span class="p">:</span> <span class="kc">False</span>
+<a id="__codelineno-27-127" name="__codelineno-27-127" href="#__codelineno-27-127"></a>                <span class="p">}</span>
+<a id="__codelineno-27-128" name="__codelineno-27-128" href="#__codelineno-27-128"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;errors&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ملف مفقود: </span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-129" name="__codelineno-27-129" href="#__codelineno-27-129"></a>
+<a id="__codelineno-27-130" name="__codelineno-27-130" href="#__codelineno-27-130"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">check_performance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-27-131" name="__codelineno-27-131" href="#__codelineno-27-131"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;فحص الأداء&quot;&quot;&quot;</span>
+<a id="__codelineno-27-132" name="__codelineno-27-132" href="#__codelineno-27-132"></a>
+<a id="__codelineno-27-133" name="__codelineno-27-133" href="#__codelineno-27-133"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;⚡ فحص الأداء...&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-134" name="__codelineno-27-134" href="#__codelineno-27-134"></a>
+<a id="__codelineno-27-135" name="__codelineno-27-135" href="#__codelineno-27-135"></a>        <span class="c1"># قياس استخدام الذاكرة</span>
+<a id="__codelineno-27-136" name="__codelineno-27-136" href="#__codelineno-27-136"></a>        <span class="n">process</span> <span class="o">=</span> <span class="n">psutil</span><span class="o">.</span><span class="n">Process</span><span class="p">()</span>
+<a id="__codelineno-27-137" name="__codelineno-27-137" href="#__codelineno-27-137"></a>        <span class="n">memory_info</span> <span class="o">=</span> <span class="n">process</span><span class="o">.</span><span class="n">memory_info</span><span class="p">()</span>
+<a id="__codelineno-27-138" name="__codelineno-27-138" href="#__codelineno-27-138"></a>
+<a id="__codelineno-27-139" name="__codelineno-27-139" href="#__codelineno-27-139"></a>        <span class="c1"># قياس استخدام المعالج</span>
+<a id="__codelineno-27-140" name="__codelineno-27-140" href="#__codelineno-27-140"></a>        <span class="n">cpu_percent</span> <span class="o">=</span> <span class="n">psutil</span><span class="o">.</span><span class="n">cpu_percent</span><span class="p">(</span><span class="n">interval</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-27-141" name="__codelineno-27-141" href="#__codelineno-27-141"></a>
+<a id="__codelineno-27-142" name="__codelineno-27-142" href="#__codelineno-27-142"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;performance&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-27-143" name="__codelineno-27-143" href="#__codelineno-27-143"></a>            <span class="s1">&#39;memory_usage_mb&#39;</span><span class="p">:</span> <span class="n">memory_info</span><span class="o">.</span><span class="n">rss</span> <span class="o">/</span> <span class="mi">1024</span> <span class="o">/</span> <span class="mi">1024</span><span class="p">,</span>
+<a id="__codelineno-27-144" name="__codelineno-27-144" href="#__codelineno-27-144"></a>            <span class="s1">&#39;cpu_usage_percent&#39;</span><span class="p">:</span> <span class="n">cpu_percent</span><span class="p">,</span>
+<a id="__codelineno-27-145" name="__codelineno-27-145" href="#__codelineno-27-145"></a>            <span class="s1">&#39;disk_io&#39;</span><span class="p">:</span> <span class="n">psutil</span><span class="o">.</span><span class="n">disk_io_counters</span><span class="p">()</span><span class="o">.</span><span class="n">_asdict</span><span class="p">()</span> <span class="k">if</span> <span class="n">psutil</span><span class="o">.</span><span class="n">disk_io_counters</span><span class="p">()</span> <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-27-146" name="__codelineno-27-146" href="#__codelineno-27-146"></a>            <span class="s1">&#39;network_io&#39;</span><span class="p">:</span> <span class="n">psutil</span><span class="o">.</span><span class="n">net_io_counters</span><span class="p">()</span><span class="o">.</span><span class="n">_asdict</span><span class="p">()</span> <span class="k">if</span> <span class="n">psutil</span><span class="o">.</span><span class="n">net_io_counters</span><span class="p">()</span> <span class="k">else</span> <span class="kc">None</span>
+<a id="__codelineno-27-147" name="__codelineno-27-147" href="#__codelineno-27-147"></a>        <span class="p">}</span>
+<a id="__codelineno-27-148" name="__codelineno-27-148" href="#__codelineno-27-148"></a>
+<a id="__codelineno-27-149" name="__codelineno-27-149" href="#__codelineno-27-149"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">check_permissions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-27-150" name="__codelineno-27-150" href="#__codelineno-27-150"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;فحص الصلاحيات&quot;&quot;&quot;</span>
+<a id="__codelineno-27-151" name="__codelineno-27-151" href="#__codelineno-27-151"></a>
+<a id="__codelineno-27-152" name="__codelineno-27-152" href="#__codelineno-27-152"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔐 فحص الصلاحيات...&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-153" name="__codelineno-27-153" href="#__codelineno-27-153"></a>
+<a id="__codelineno-27-154" name="__codelineno-27-154" href="#__codelineno-27-154"></a>        <span class="c1"># فحص صلاحيات الكتابة</span>
+<a id="__codelineno-27-155" name="__codelineno-27-155" href="#__codelineno-27-155"></a>        <span class="n">test_file</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;test_write_permission.tmp&#39;</span><span class="p">)</span>
+<a id="__codelineno-27-156" name="__codelineno-27-156" href="#__codelineno-27-156"></a>
+<a id="__codelineno-27-157" name="__codelineno-27-157" href="#__codelineno-27-157"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-27-158" name="__codelineno-27-158" href="#__codelineno-27-158"></a>            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">test_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-27-159" name="__codelineno-27-159" href="#__codelineno-27-159"></a>                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">)</span>
+<a id="__codelineno-27-160" name="__codelineno-27-160" href="#__codelineno-27-160"></a>            <span class="n">test_file</span><span class="o">.</span><span class="n">unlink</span><span class="p">()</span>
+<a id="__codelineno-27-161" name="__codelineno-27-161" href="#__codelineno-27-161"></a>
+<a id="__codelineno-27-162" name="__codelineno-27-162" href="#__codelineno-27-162"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;permissions&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-27-163" name="__codelineno-27-163" href="#__codelineno-27-163"></a>                <span class="s1">&#39;write_access&#39;</span><span class="p">:</span> <span class="kc">True</span>
+<a id="__codelineno-27-164" name="__codelineno-27-164" href="#__codelineno-27-164"></a>            <span class="p">}</span>
+<a id="__codelineno-27-165" name="__codelineno-27-165" href="#__codelineno-27-165"></a>
+<a id="__codelineno-27-166" name="__codelineno-27-166" href="#__codelineno-27-166"></a>        <span class="k">except</span> <span class="ne">PermissionError</span><span class="p">:</span>
+<a id="__codelineno-27-167" name="__codelineno-27-167" href="#__codelineno-27-167"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;permissions&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-27-168" name="__codelineno-27-168" href="#__codelineno-27-168"></a>                <span class="s1">&#39;write_access&#39;</span><span class="p">:</span> <span class="kc">False</span>
+<a id="__codelineno-27-169" name="__codelineno-27-169" href="#__codelineno-27-169"></a>            <span class="p">}</span>
+<a id="__codelineno-27-170" name="__codelineno-27-170" href="#__codelineno-27-170"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;errors&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;ليس لديك صلاحية الكتابة في المجلد الحالي&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-171" name="__codelineno-27-171" href="#__codelineno-27-171"></a>
+<a id="__codelineno-27-172" name="__codelineno-27-172" href="#__codelineno-27-172"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">generate_report</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-27-173" name="__codelineno-27-173" href="#__codelineno-27-173"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;إنشاء التقرير النهائي&quot;&quot;&quot;</span>
+<a id="__codelineno-27-174" name="__codelineno-27-174" href="#__codelineno-27-174"></a>
+<a id="__codelineno-27-175" name="__codelineno-27-175" href="#__codelineno-27-175"></a>        <span class="n">report_file</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;diagnostic_report_</span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y%m</span><span class="si">%d</span><span class="s1">_%H%M%S&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">.json&quot;</span>
+<a id="__codelineno-27-176" name="__codelineno-27-176" href="#__codelineno-27-176"></a>
+<a id="__codelineno-27-177" name="__codelineno-27-177" href="#__codelineno-27-177"></a>        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">report_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<a id="__codelineno-27-178" name="__codelineno-27-178" href="#__codelineno-27-178"></a>            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-27-179" name="__codelineno-27-179" href="#__codelineno-27-179"></a>
+<a id="__codelineno-27-180" name="__codelineno-27-180" href="#__codelineno-27-180"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📋 تم حفظ التقرير في: </span><span class="si">{</span><span class="n">report_file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-181" name="__codelineno-27-181" href="#__codelineno-27-181"></a>
+<a id="__codelineno-27-182" name="__codelineno-27-182" href="#__codelineno-27-182"></a>        <span class="c1"># عرض ملخص</span>
+<a id="__codelineno-27-183" name="__codelineno-27-183" href="#__codelineno-27-183"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">print_summary</span><span class="p">()</span>
+<a id="__codelineno-27-184" name="__codelineno-27-184" href="#__codelineno-27-184"></a>
+<a id="__codelineno-27-185" name="__codelineno-27-185" href="#__codelineno-27-185"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">print_summary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-27-186" name="__codelineno-27-186" href="#__codelineno-27-186"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;عرض ملخص التشخيص&quot;&quot;&quot;</span>
+<a id="__codelineno-27-187" name="__codelineno-27-187" href="#__codelineno-27-187"></a>
+<a id="__codelineno-27-188" name="__codelineno-27-188" href="#__codelineno-27-188"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span>
+<a id="__codelineno-27-189" name="__codelineno-27-189" href="#__codelineno-27-189"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;📋 ملخص التشخيص&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-190" name="__codelineno-27-190" href="#__codelineno-27-190"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span>
+<a id="__codelineno-27-191" name="__codelineno-27-191" href="#__codelineno-27-191"></a>
+<a id="__codelineno-27-192" name="__codelineno-27-192" href="#__codelineno-27-192"></a>        <span class="c1"># معلومات النظام</span>
+<a id="__codelineno-27-193" name="__codelineno-27-193" href="#__codelineno-27-193"></a>        <span class="n">system</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;system_info&#39;</span><span class="p">]</span>
+<a id="__codelineno-27-194" name="__codelineno-27-194" href="#__codelineno-27-194"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;🖥️ النظام: </span><span class="si">{</span><span class="n">system</span><span class="p">[</span><span class="s1">&#39;system&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">system</span><span class="p">[</span><span class="s1">&#39;release&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-195" name="__codelineno-27-195" href="#__codelineno-27-195"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;💾 الذاكرة: </span><span class="si">{</span><span class="n">system</span><span class="p">[</span><span class="s1">&#39;memory_available&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="o">**</span><span class="mi">3</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> GB متاحة&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-196" name="__codelineno-27-196" href="#__codelineno-27-196"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;💿 القرص: </span><span class="si">{</span><span class="n">system</span><span class="p">[</span><span class="s1">&#39;disk_usage&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">% مستخدم&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-197" name="__codelineno-27-197" href="#__codelineno-27-197"></a>
+<a id="__codelineno-27-198" name="__codelineno-27-198" href="#__codelineno-27-198"></a>        <span class="c1"># Python</span>
+<a id="__codelineno-27-199" name="__codelineno-27-199" href="#__codelineno-27-199"></a>        <span class="n">python_version</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;python_info&#39;</span><span class="p">][</span><span class="s1">&#39;version&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<a id="__codelineno-27-200" name="__codelineno-27-200" href="#__codelineno-27-200"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;🐍 Python: </span><span class="si">{</span><span class="n">python_version</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-201" name="__codelineno-27-201" href="#__codelineno-27-201"></a>
+<a id="__codelineno-27-202" name="__codelineno-27-202" href="#__codelineno-27-202"></a>        <span class="c1"># المكتبات</span>
+<a id="__codelineno-27-203" name="__codelineno-27-203" href="#__codelineno-27-203"></a>        <span class="n">deps</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;dependencies&#39;</span><span class="p">]</span>
+<a id="__codelineno-27-204" name="__codelineno-27-204" href="#__codelineno-27-204"></a>        <span class="n">missing_deps</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">deps</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">v</span> <span class="o">==</span> <span class="s1">&#39;مفقود&#39;</span><span class="p">]</span>
+<a id="__codelineno-27-205" name="__codelineno-27-205" href="#__codelineno-27-205"></a>        <span class="k">if</span> <span class="n">missing_deps</span><span class="p">:</span>
+<a id="__codelineno-27-206" name="__codelineno-27-206" href="#__codelineno-27-206"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ مكتبات مفقودة: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">missing_deps</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-207" name="__codelineno-27-207" href="#__codelineno-27-207"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-27-208" name="__codelineno-27-208" href="#__codelineno-27-208"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ جميع المكتبات مثبتة&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-209" name="__codelineno-27-209" href="#__codelineno-27-209"></a>
+<a id="__codelineno-27-210" name="__codelineno-27-210" href="#__codelineno-27-210"></a>        <span class="c1"># ملفات البيانات</span>
+<a id="__codelineno-27-211" name="__codelineno-27-211" href="#__codelineno-27-211"></a>        <span class="n">files</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;files_status&#39;</span><span class="p">]</span>
+<a id="__codelineno-27-212" name="__codelineno-27-212" href="#__codelineno-27-212"></a>        <span class="n">corrupted_files</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">files</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">v</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;valid_json&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)]</span>
+<a id="__codelineno-27-213" name="__codelineno-27-213" href="#__codelineno-27-213"></a>        <span class="k">if</span> <span class="n">corrupted_files</span><span class="p">:</span>
+<a id="__codelineno-27-214" name="__codelineno-27-214" href="#__codelineno-27-214"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ ملفات تالفة: </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">corrupted_files</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-215" name="__codelineno-27-215" href="#__codelineno-27-215"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-27-216" name="__codelineno-27-216" href="#__codelineno-27-216"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ جميع ملفات البيانات سليمة&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-217" name="__codelineno-27-217" href="#__codelineno-27-217"></a>
+<a id="__codelineno-27-218" name="__codelineno-27-218" href="#__codelineno-27-218"></a>        <span class="c1"># الأداء</span>
+<a id="__codelineno-27-219" name="__codelineno-27-219" href="#__codelineno-27-219"></a>        <span class="n">perf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;performance&#39;</span><span class="p">]</span>
+<a id="__codelineno-27-220" name="__codelineno-27-220" href="#__codelineno-27-220"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;⚡ استخدام الذاكرة: </span><span class="si">{</span><span class="n">perf</span><span class="p">[</span><span class="s1">&#39;memory_usage_mb&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> MB&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-221" name="__codelineno-27-221" href="#__codelineno-27-221"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;⚡ استخدام المعالج: </span><span class="si">{</span><span class="n">perf</span><span class="p">[</span><span class="s1">&#39;cpu_usage_percent&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-222" name="__codelineno-27-222" href="#__codelineno-27-222"></a>
+<a id="__codelineno-27-223" name="__codelineno-27-223" href="#__codelineno-27-223"></a>        <span class="c1"># الأخطاء</span>
+<a id="__codelineno-27-224" name="__codelineno-27-224" href="#__codelineno-27-224"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;errors&#39;</span><span class="p">]:</span>
+<a id="__codelineno-27-225" name="__codelineno-27-225" href="#__codelineno-27-225"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">❌ الأخطاء المكتشفة (</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;errors&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2">):&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-226" name="__codelineno-27-226" href="#__codelineno-27-226"></a>            <span class="k">for</span> <span class="n">error</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">report</span><span class="p">[</span><span class="s1">&#39;errors&#39;</span><span class="p">]:</span>
+<a id="__codelineno-27-227" name="__codelineno-27-227" href="#__codelineno-27-227"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  • </span><span class="si">{</span><span class="n">error</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-228" name="__codelineno-27-228" href="#__codelineno-27-228"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-27-229" name="__codelineno-27-229" href="#__codelineno-27-229"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">✅ لم يتم اكتشاف أخطاء&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-230" name="__codelineno-27-230" href="#__codelineno-27-230"></a>
+<a id="__codelineno-27-231" name="__codelineno-27-231" href="#__codelineno-27-231"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<a id="__codelineno-27-232" name="__codelineno-27-232" href="#__codelineno-27-232"></a>    <span class="n">diagnostics</span> <span class="o">=</span> <span class="n">SystemDiagnostics</span><span class="p">()</span>
+<a id="__codelineno-27-233" name="__codelineno-27-233" href="#__codelineno-27-233"></a>    <span class="n">diagnostics</span><span class="o">.</span><span class="n">run_full_diagnostics</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="_13">📞 الحصول على المساعدة<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h3 id="_14">متى تطلب المساعدة<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>🆘 اطلب المساعدة إذا:
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>• جربت جميع الحلول المقترحة
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>• المشكلة تتكرر باستمرار
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>• تؤثر على عملك بشكل كبير
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>• تحتاج مساعدة في إعداد معقد
+</code></pre></div>
+<h3 id="_15">قنوات الدعم<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<h4 id="1_7">1. الدعم الذاتي<a class="headerlink" href="#1_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>الوثائق</strong>: ابدأ بقراءة هذا الدليل</li>
+<li><strong>الأسئلة الشائعة</strong>: <a href="../faq/">FAQ</a></li>
+<li><strong>أدوات التشخيص</strong>: استخدم الأدوات المدمجة</li>
+</ul>
+<h4 id="2_7">2. الدعم المجتمعي<a class="headerlink" href="#2_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>GitHub Issues</strong>: للأخطاء والاقتراحات</li>
+<li><strong>GitHub Discussions</strong>: للأسئلة العامة</li>
+<li><strong>منتدى المستخدمين</strong>: للنقاشات</li>
+</ul>
+<h4 id="3_4">3. الدعم المباشر<a class="headerlink" href="#3_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>البريد الإلكتروني</strong>: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#101;&#117;&#114;&#111;&#116;&#111;&#111;&#108;&#115;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#101;&#117;&#114;&#111;&#116;&#111;&#111;&#108;&#115;&#46;&#99;&#111;&#109;</a></li>
+<li><strong>نموذج الدعم</strong>: عبر الموقع الرسمي</li>
+</ul>
+<h3 id="_16">معلومات مطلوبة عند طلب المساعدة<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>📋 أرفق هذه المعلومات:
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>• وصف مفصل للمشكلة
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>• خطوات إعادة إنتاج المشكلة
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>• رسائل الخطأ (إن وجدت)
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>• تقرير التشخيص
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>• إصدار التطبيق ونظام التشغيل
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>• لقطات شاشة (إن أمكن)
+</code></pre></div>
+<hr />
+<p><strong>التالي</strong>: <a href="getting-help.md">الحصول على المساعدة</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/your-username/euro-tools-code-manager" target="_blank" rel="noopener">Euro Tools Team</a> - 
+مرخص تحت <a href="https://github.com/your-username/euro-tools-code-manager/blob/main/LICENSE" target="_blank" rel="noopener">رخصة MIT</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/your-username/euro-tools-code-manager" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:support@eurotools.com" target="_blank" rel="noopener" title="البريد الإلكتروني" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/Eslam30503o/eurotools-updater/releases" target="_blank" rel="noopener" title="تحميل التطبيق" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v210.7l-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7zM64 320c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64h-46.9l-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.indexes", "toc.follow", "toc.integrate", "search.suggest", "search.highlight", "search.share", "header.autohide", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u062a\u0645 \u0627\u0644\u0646\u0633\u062e \u0627\u0644\u0649 \u0627\u0644\u062d\u0627\u0641\u0638\u0629", "clipboard.copy": "\u0646\u0633\u062e \u0625\u0644\u0649 \u0627\u0644\u062d\u0627\u0641\u0638\u0629", "search.result.more.one": "\u0623\u0643\u062b\u0631 \u0645\u0646 1 \u0641\u064a \u0647\u0630\u0647 \u0627\u0644\u0635\u0641\u062d\u0629", "search.result.more.other": "\u0623\u0643\u062b\u0631 \u0645\u0646 # \u0641\u064a \u0647\u0630\u0647 \u0627\u0644\u0635\u0641\u062d\u0629", "search.result.none": "\u0644\u0627 \u062a\u0648\u062c\u062f \u0646\u062a\u0627\u0626\u062c", "search.result.one": "\u0646\u062a\u0627\u0626\u062c \u0627\u0644\u0628\u062d\u062b \u0645\u0633\u062a\u0646\u062f \u0648\u0627\u062d\u062f", "search.result.other": "\u0646\u062a\u0627\u0626\u062c \u0627\u0644\u0628\u062d\u062b # \u0645\u0633\u062a\u0646\u062f\u0627\u062a", "search.result.placeholder": "\u0627\u0643\u062a\u0628 \u0644\u0628\u062f\u0621 \u0627\u0644\u0628\u062d\u062b", "search.result.term.missing": "\u0645\u0641\u0642\u0648\u062f", "select.version": "\u0625\u062e\u062a\u0631 \u0627\u0644\u0625\u0635\u062f\u0627\u0631"}, "version": {"default": "stable", "provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
