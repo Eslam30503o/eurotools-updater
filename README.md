@@ -27,14 +27,18 @@ Euro Tools Code Manager هو تطبيق متقدم لإدارة وتنظيم أ�
   <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.5.0/Euro.Tools.Code.Generators.exe">
     <img src="https://img.shields.io/badge/⬇_تحميل-إصدار_4.5.0-198754?style=for-the-badge&logo=download&logoColor=white" />
   </a>
+  <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.6.0/Euro.Tools.Code.Generators.exe">
+    <img src="https://img.shields.io/badge/⬇_تحميل-إصدار_4.6.0-198754?style=for-the-badge&logo=download&logoColor=white" />
+  </a>
+  <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.7.0/Euro.Tools.Code.Generators.exe">
+    <img src="https://img.shields.io/badge/⬇_تحميل-إصدار_4.7.0-198754?style=for-the-badge&logo=download&logoColor=white" />
+  </a>
 </p>
 
 
 
 <p align="center">
-  <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.6.0/Euro.Tools.Code.Generators.exe">
-    <img src="https://img.shields.io/badge/⬇_تحميل-إصدار_4.6.0-198754?style=for-the-badge&logo=download&logoColor=white" />
-  </a>
+
 </p>
 
 
@@ -43,9 +47,7 @@ Euro Tools Code Manager هو تطبيق متقدم لإدارة وتنظيم أ�
 </p>
 
 <p align="left">
-  <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.7.0/Euro.Tools.Code.Generators.exe">
-    <img src="https://img.shields.io/badge/⬇_تحميل-إصدار_4.7.0-198754?style=for-the-badge&logo=download&logoColor=white" />
-  </a>
+
 </p>
 
 
