@@ -23,7 +23,7 @@
 ### 📋 نظرة عامة
 
 Euro Tools Code Manager هو تطبيق متقدم لإدارة وتنظيم أكواد الأدوات الصناعية. يوفر النظام واجهة مستخدم حديثة وسهلة الاستخدام مع إمكانيات مزامنة سحابية متقدمة عبر Google Sheets.
-<p align="center">
+<p>
   <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.5.0/Euro.Tools.Code.Generators.exe">
     <img src="https://img.shields.io/badge/⬇_تحميل-إصدار_4.5.0-198754?style=for-the-badge&logo=download&logoColor=white" />
   </a>
@@ -43,9 +43,6 @@ Euro Tools Code Manager هو تطبيق متقدم لإدارة وتنظيم أ�
   <p>
   <sub>Windows 64-bit • Offline Installer</sub>
   </p>
-</p>
-<p align="center">
-  <sub>Windows 64-bit • Offline Installer</sub>
 </p>
 
 
