@@ -34,6 +34,28 @@ Euro Tools Code Manager هو تطبيق متقدم لإدارة وتنظيم أ�
   <sub>Windows 64-bit • Offline Installer</sub>
 </p>
 
+<p align="center">
+  <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.6.0/Euro.Tools.Code.Generators.exe">
+    <img src="https://img.shields.io/badge/⬇_تحميل-إصدار_4.6.0-198754?style=for-the-badge&logo=download&logoColor=white" />
+  </a>
+</p>
+
+
+<p align="center">
+  <sub>Windows 64-bit • Offline Installer</sub>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.7.0/Euro.Tools.Code.Generators.exe">
+    <img src="https://img.shields.io/badge/⬇_تحميل-إصدار_4.7.0-198754?style=for-the-badge&logo=download&logoColor=white" />
+  </a>
+</p>
+
+
+<p align="center">
+  <sub>Windows 64-bit • Offline Installer</sub>
+</p>
+
 
 
 ### ✨ الميزات الرئيسية
@@ -310,6 +332,24 @@ Euro Tools Code Manager is an advanced application for managing and organizing i
 <p align="center">
   <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.5.0/Euro.Tools.Code.Generators.exe">
     <img src="https://img.shields.io/badge/⬇_Download%20Version-4.5.0-0A66C2?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>Windows 64-bit • Offline Installer</sub>
+</p>
+<p align="center">
+  <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.6.0/Euro.Tools.Code.Generators.exe">
+    <img src="https://img.shields.io/badge/⬇_Download%20Version-4.6.0-0A66C2?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>Windows 64-bit • Offline Installer</sub>
+</p>
+<p align="center">
+  <a href="https://github.com/Eslam30503o/eurotools-updater/releases/download/4.7.0/Euro.Tools.Code.Generators.exe">
+    <img src="https://img.shields.io/badge/⬇_Download%20Version-4.7.0-0A66C2?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
